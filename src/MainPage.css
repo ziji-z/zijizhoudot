@@ -1,54 +1,69 @@
 .main-page {
     text-align: left;
-    margin-left: 100px;
+    margin-left: 3.5vw;
     font-family: 'Inter', sans-serif;
     font-weight: 100;
+    display: flex;
   }
 
   .navigation {
     width: 40%; /* Adjust as needed */
   }
   
-  .title {
-    font-size: 5vw;
-    font-weight: 100;
-    margin-bottom: 0;
-  }
+    .title {
+      font-size: 5vw;
+      font-weight: 100;
+      margin-bottom: 0;
+    }
+    
+    .subtitle {
+      margin-top: 0;
+      font-size: 0.9vw;
+      color: rgb(74, 74, 74);
+      font-weight: 100;
+    }
+
+    .menu-note-container {
+      width: 60%;
+    }
+
+      #menu-note {
+        font-size: 1.3vw;
+        color: rgb(96, 96, 96);
+        filter: blur(0.85px);
+      }
+      
+    .menu {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: flex-start; /* Align items to the left (start of the container) */
+      gap: 10px; /* Space between buttons */
+      width: 100%;
+    }
+    
+    .menu-item {
+      background-color: transparent;
+      margin-bottom: 10px;
+      border: none;
+      font-size: 1vw;
+      font-weight: 100;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      padding: 0;
+      text-align: left;
+    }
+
+    .menu-item:hover {
+      text-decoration: underline;
+    }
   
-  .subtitle {
-    margin-top: 0;
-    font-size: 0.9vw;
-    color: rgb(74, 74, 74);
-    font-weight: 100;
+  .main-content{
+    width: 60%;
   }
 
-  #menu-note {
-    font-size: 1vw;
-    color: rgb(63, 63, 63);
-    filter: blur(1px);
-  }
-  
-  .menu {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: flex-start; /* Align items to the left (start of the container) */
-    gap: 10px; /* Space between buttons */
-    width: 50%;
-  }
-  
-  .menu-item {
-    background-color: transparent;
-    margin-bottom: 10px;
-    border: none;
-    font-size: 1.2vw;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    padding: 0;
-    text-align: left;
-  }
-
-  .menu-item:hover {
-    text-decoration: underline;
-  }
+    .section-title {
+      font-size: 100vw;
+      font-weight: 100;      
+    }

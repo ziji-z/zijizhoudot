@@ -4,7 +4,7 @@ import DynamicText from './DynamicText';
 
 
 const MainPage = () => {
-    const [title, setTitle] = useState('ziji zhou | 周子霁');
+    const [title, setTitle] = useState('');
 
       // Function to update the title
     const changeTitle = (newTitle) => {
@@ -14,9 +14,11 @@ const MainPage = () => {
     return (
         <div className="main-page">
           <div className="navigation">
-            <h1 className="title">{title}</h1>
+            <h1 className="title">ziji zhou | 周子霁</h1>
             <h2 className="subtitle">amherst college | github: ziji-z | zijizhouziji@gmail.com</h2>
-            <h3 id='menu-note'>none of the below are mutually exclusive nor mutually exhaustive</h3>
+            <div className='menu-note-container'>
+              <h3 id='menu-note'>none of the below are mutually exclusive nor mutually exhaustive</h3>
+            </div>
             <nav>
               <ul className="menu">
                 <button className="menu-item" onClick={() => changeTitle('ziji/自己/子霁/things abt me')}>ziji/自己/子霁/things abt me</button>
@@ -26,6 +28,9 @@ const MainPage = () => {
                 <button className="menu-item" onClick={() => changeTitle('writings/for me, for school, and things to read')}>writings/for me, for school, and things to read</button>
               </ul>
             </nav>
+          </div>
+          <div className="main-content">
+            <h1 classname="section-title">{title}</h1>
           </div>
         </div>
       );
