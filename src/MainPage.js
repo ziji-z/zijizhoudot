@@ -21,8 +21,9 @@ const MainPage = () => {
             </div>
             <nav>
               <ul className="menu">
-                <button className="menu-item" onClick={() => changeTitle('ziji/自己/子霁/things abt me')}>ziji/自己/子霁/things abt me</button>
-                <button className="menu-item" onClick={() => changeTitle('art/photos and paintings and sketches and videos and things to see')}>art/photos and paintings and sketches and videos and things to see</button>
+                <button className="menu-item" onClick={() => changeTitle('ziji/自己/things abt me')}>ziji/自己/things abt me</button>
+                <button className="menu-item" onClick={() => changeTitle('art/paintings and sketches and things i made')}>art/paintings and sketches and things i made</button>
+                <button className="menu-item" onClick={() => changeTitle('film/photos and videos and things to see')}>film/photos and videos and things to see</button>
                 <button className="menu-item" onClick={() => changeTitle('math/research and other things that involve logic of some sort')}>math/research and other things that involve logic of some sort</button>
                 <button className="menu-item" onClick={() => changeTitle('sounds/and other stupid little things to listen to')}>sounds/and other stupid little things to listen to</button>
                 <button className="menu-item" onClick={() => changeTitle('writings/for me, for school, and things to read')}>writings/for me, for school, and things to read</button>

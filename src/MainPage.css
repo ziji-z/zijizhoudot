@@ -1,3 +1,9 @@
+body {
+  background-color: rgb(255, 247, 236); /* Replace with your desired color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
 .main-page {
     display: flex;
     align-items: baseline;
@@ -47,7 +53,7 @@
       display: flex;
       flex-direction: column; /* Stack buttons vertically */
       align-items: flex-start; /* Align items to the left (start of the container) */
-      gap: 1em; /* Space between buttons */
+      gap: 0.5vw; /* Space between buttons */
       width: 100%;
     }
     
@@ -72,5 +78,6 @@
 
     .section-title {
       font-size: 2vw;
-      font-weight: 100;      
+      font-weight: 100;  
+      font-style: italic;    
     }
