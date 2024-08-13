@@ -1,10 +1,18 @@
 .main-page {
+    display: flex;
+    align-items: baseline;
     text-align: left;
     margin-left: 3.5vw;
     font-family: 'Inter', sans-serif;
     font-weight: 100;
-    display: flex;
-    align-items: flex-start;
+    gap: 1vw;
+    margin-top: 5vw;
+  }
+
+  .title, .section-title {
+    margin: 0; /* Reset any default margin */
+    padding: 0; /* Reset any padding, just in case */
+    line-height: 1;
   }
 
   .navigation {
@@ -18,7 +26,6 @@
     }
     
     .subtitle {
-      margin-top: 0;
       font-size: 0.9vw;
       color: rgb(74, 74, 74);
       font-weight: 100;
@@ -31,7 +38,7 @@
       #menu-note {
         font-size: 1.3vw;
         color: rgb(96, 96, 96);
-        filter: blur(0.85px);
+        filter: blur(0.07vw);
       }
       
     .menu {
@@ -40,13 +47,12 @@
       display: flex;
       flex-direction: column; /* Stack buttons vertically */
       align-items: flex-start; /* Align items to the left (start of the container) */
-      gap: 10px; /* Space between buttons */
+      gap: 1em; /* Space between buttons */
       width: 100%;
     }
     
     .menu-item {
       background-color: transparent;
-      margin-bottom: 10px;
       border: none;
       font-size: 1vw;
       font-weight: 100;
@@ -61,7 +67,7 @@
     }
   
   .main-content{
-    width: 60%;
+    width: 59%;
   }
 
     .section-title {
