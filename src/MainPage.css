@@ -1,26 +1,53 @@
 .main-page {
-    text-align: center;
-    padding: 20px;
+    text-align: left;
+    margin-left: 100px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+  }
+
+  .navigation {
+    width: 40%; /* Adjust as needed */
   }
   
   .title {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+    font-size: 5vw;
+    font-weight: 100;
+    margin-bottom: 0;
   }
   
   .subtitle {
-    font-size: 1.5em;
-    color: gray;
-    margin-bottom: 1em;
+    margin-top: 0;
+    font-size: 0.9vw;
+    color: rgb(74, 74, 74);
+    font-weight: 100;
+  }
+
+  #menu-note {
+    font-size: 1vw;
+    color: rgb(63, 63, 63);
+    filter: blur(1px);
   }
   
   .menu {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start; /* Align items to the left (start of the container) */
+    gap: 10px; /* Space between buttons */
+    width: 50%;
   }
   
-  .menu li {
-    display: inline;
-    margin-right: 20px;
-    font-size: 1.2em;
+  .menu-item {
+    background-color: transparent;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0;
+  }
+
+  .menu-item:hover {
+    text-decoration: underline;
   }
