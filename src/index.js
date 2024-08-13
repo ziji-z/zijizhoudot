@@ -1,8 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import MainPage from './MainPage';
 
-const App = () => {
-  return <h1>Hello, React!</h1>;
-};
+// Create a root.
+const root = createRoot(document.getElementById('root'));
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Render the main page component.
+root.render(<MainPage />);

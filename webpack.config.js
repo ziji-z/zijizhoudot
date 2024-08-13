@@ -9,7 +9,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.css$/,  // Check for .css files
+        use: ['style-loader', 'css-loader'],  // Use style-loader and css-loader
+      },
+      {
+        test: /\.js$/,  // Check for .js files
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -17,5 +21,4 @@ module.exports = {
       },
     ],
   },
-  mode: 'development',
 };

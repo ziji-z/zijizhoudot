@@ -1,0 +1,26 @@
+.main-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .subtitle {
+    font-size: 1.5em;
+    color: gray;
+    margin-bottom: 1em;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.2em;
+  }
