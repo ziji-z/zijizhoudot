@@ -30,7 +30,7 @@ const MainPage = () => {
             </nav>
           </div>
           <div className="main-content">
-            <h1 classname="section-title">{title}</h1>
+            <h1 className="section-title">{title}</h1>
           </div>
         </div>
       );
