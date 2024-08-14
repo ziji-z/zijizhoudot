@@ -9,16 +9,23 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,  // Check for .css files
-        use: ['style-loader', 'css-loader'],  // Use style-loader and css-loader
-      },
-      {
-        test: /\.js$/,  // Check for .js files
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.md$/,
+        use: 'raw-loader',
+      },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.css'],
   },
 };

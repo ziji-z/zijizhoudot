@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 247, 236); /* Replace with your desired color */
+  background-color: rgb(253, 248, 243); /* Replace with your desired color */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
@@ -8,11 +8,12 @@ body {
     display: flex;
     align-items: baseline;
     text-align: left;
-    margin-left: 3.5vw;
+    margin-left: 5vw;
     font-family: 'Inter', sans-serif;
     font-weight: 100;
     gap: 1vw;
     margin-top: 5vw;
+    margin-right: 5vw;
   }
 
   .title, .section-title {
@@ -26,7 +27,7 @@ body {
   }
   
     .title {
-      font-size: 5vw;
+      font-size: 4.3vw;
       font-weight: 100;
       margin-bottom: 0;
     }
@@ -54,11 +55,13 @@ body {
       flex-direction: column; /* Stack buttons vertically */
       align-items: flex-start; /* Align items to the left (start of the container) */
       gap: 0.5vw; /* Space between buttons */
+      font-weight: 100;
       width: 100%;
     }
     
     .menu-item {
       background-color: transparent;
+      font-family: 'Inter', sans-serif;
       border: none;
       font-size: 1vw;
       font-weight: 100;
@@ -73,11 +76,40 @@ body {
     }
   
   .main-content{
-    width: 59%;
+    overflow-y: auto;
+    width: 50%;
+    margin: 0;
   }
 
-    .section-title {
-      font-size: 2vw;
-      font-weight: 100;  
-      font-style: italic;    
-    }
+  .section-title {
+    font-size: 2vw;
+    font-weight: 100;  
+    font-style: italic;   
+    margin: 0; 
+    cursor: pointer;
+  }
+
+  .section-title:hover {
+    text-decoration: underline;
+  }
+
+  .post-item{
+    cursor: pointer;
+    gap: 0;
+  }
+
+  .post-item:hover {
+    text-decoration: underline;
+  }
+
+  h4 {
+    font-size: 1.2vw;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 0.5vw;
+  }
+  p {
+    margin-top: 0.5vw;
+  }
+
+  
