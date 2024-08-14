@@ -5,6 +5,7 @@ body {
   margin-right: 5vw;
   padding: 0; /* Remove default padding */
   font-family: 'Inter', sans-serif;
+  overflow: hidden;
 }
 
 .main-page {
