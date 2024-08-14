@@ -44,11 +44,13 @@ const MainPage = () => {
         >
           {title}
         </h1>
-        <ContentLoader 
-          isArticleSelected={isArticleSelected} 
-          onArticleSelect={() => setIsArticleSelected(true)} 
-          onBack={() => setIsArticleSelected(false)} 
-        />
+        <div className='main-text'>
+          <ContentLoader 
+            isArticleSelected={isArticleSelected} 
+            onArticleSelect={() => setIsArticleSelected(true)} 
+            onBack={() => setIsArticleSelected(false)} 
+          />
+        </div>
       </div>
     </div>
   );
