@@ -23,7 +23,6 @@ const MainPage = () => {
         <ContentLoader 
             isArticleSelected={isArticleSelected} 
             onArticleSelect={() => setIsArticleSelected(true) & changeTitle('back to writings')}
-            onBack={() => setIsArticleSelected(false) & changeTitle('writings/for me, for school, and things to read')} 
           />
       )
     }

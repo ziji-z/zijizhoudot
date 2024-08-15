@@ -10,7 +10,7 @@ const fetchMarkdownFiles = (requireContext) => {
   }));
 };
 
-const ContentLoader = ({ isArticleSelected, onArticleSelect, onBack }) => {
+const ContentLoader = ({ isArticleSelected, onArticleSelect }) => {
   const [posts, setPosts] = useState([]);
   const [selectedPost, setSelectedPost] = useState(null);
 
