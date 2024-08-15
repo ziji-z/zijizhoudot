@@ -13,8 +13,24 @@ const MainPage = () => {
   const handleSectionTitleClick = () => {
     if (isArticleSelected) {
       setIsArticleSelected(false); // Show the list of articles
+      changeTitle('writings/for me, for school, and things to read'); //change title back
     }
   };
+
+  const contentSection = (currentTitle) => { // handles the content section based on the nav menu selection
+    if (currentTitle == "writings/for me, for school, and things to read" || currentTitle == "back to writings") {
+      return (
+        <ContentLoader 
+            isArticleSelected={isArticleSelected} 
+            onArticleSelect={() => setIsArticleSelected(true) & changeTitle('back to writings')}
+            onBack={() => setIsArticleSelected(false) & changeTitle('writings/for me, for school, and things to read')} 
+          />
+      )
+    }
+    return (
+      <p>nothing selected</p>
+    )
+  } 
 
   return (
     <div className="main-page">
@@ -22,7 +38,7 @@ const MainPage = () => {
         <h1 className="title">ziji zhou | 周子霁</h1>
         <h2 className="subtitle">amherst college | github: ziji-z | zijizhouziji@gmail.com</h2>
         <div className='menu-note-container'>
-          <h3 id='menu-note'>none of the below are mutually exclusive nor mutually exhaustive</h3>
+          <h3 id='menu-note'>none of the below are mutually exclusive</h3>
         </div>
         <nav>
           <ul className="menu">
@@ -44,13 +60,7 @@ const MainPage = () => {
         >
           {title}
         </h1>
-        <div className='main-text'>
-          <ContentLoader 
-            isArticleSelected={isArticleSelected} 
-            onArticleSelect={() => setIsArticleSelected(true)} 
-            onBack={() => setIsArticleSelected(false)} 
-          />
-        </div>
+        <div className='main-text'> {contentSection(title)} </div>
       </div>
     </div>
   );

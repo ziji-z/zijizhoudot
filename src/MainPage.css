@@ -27,7 +27,7 @@ body {
 .main-content {
   width: 45%;
   padding-left: 2vw; /* Add padding to the left if needed */
-  height: 100%;
+  height: 90%;
   overflow: auto;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 #menu-note {
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   color: rgb(96, 96, 96);
   filter: blur(0.07vw);
 }
